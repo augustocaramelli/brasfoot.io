@@ -2,6 +2,7 @@
 import pyautogui
 from time import sleep
 import requests
+import random
 from paises import paises_en_pt
 
 club_id = 31  # Example club ID, replace with actual ID
@@ -31,6 +32,37 @@ if response.status_code == 200:
         # 3- Clicar e selecionar a posição
         if posicao == 'Goalkeeper':
             print('Goleiro, etapa pulada') # Se for goleiro, essa etapa pode ser pulada
+
+            lista = ['Col', 'DPe', 'Ref', 'SGo']
+            caracteristicas = random.sample(lista, 2)
+            print(caracteristicas)
+            if caracteristicas[0] == 'Col':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,545, duration=0)
+            elif caracteristicas[0] == 'DPe':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,565, duration=0)
+            elif caracteristicas[0] == 'Ref':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,585, duration=0)
+            elif caracteristicas[0] == 'SGo':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,600, duration=0)
+            
+            if caracteristicas[1] == 'Col':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,545, duration=0)
+            elif caracteristicas[1] == 'DPe':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,565, duration=0)
+            elif caracteristicas[1] == 'Ref':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,585, duration=0)
+            elif caracteristicas[1] == 'SGo':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,600, duration=0)
+
+                
         elif posicao == 'Left-Back':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,484, duration=0)

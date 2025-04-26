@@ -1,0 +1,51 @@
+Goleiro:
+- DPe
+- Ref
+- SGo
+- Col
+
+Lateral:
+- Cru
+- Vel
+- Pas
+- Des
+- Mar
+
+Zagueiro:
+- Des
+- Mar
+- Res
+- Cab
+
+Volante:
+- Des
+- Mar
+- Res
+- Cab
+- Pas
+- Vel
+- Fin
+
+Meia Ala:
+- Pas
+- Dri
+- Vel
+- Fin
+
+Meia Ofensivo:
+- Arm
+- Pas
+- Dri
+- Fin
+
+Ponta:
+- Fin
+- Pas
+- Dri
+- Vel
+
+Centroavante:
+- Fin
+- Cab
+- Res
+- Dri
