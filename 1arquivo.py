@@ -1,9 +1,9 @@
-# coding: utf-8
 import pyautogui
 from time import sleep
 import requests
 import random
 from paises import paises_en_pt
+import pyperclip
 
 club_id = 31  # Example club ID, replace with actual ID
 url = f"https://transfermarkt-api.fly.dev/clubs/{club_id}/players"
@@ -18,7 +18,8 @@ if response.status_code == 200:
 
         # 1- Clicar e digitar o nome
         pyautogui.click(864,411, duration=0)
-        pyautogui.write(nome)
+        pyperclip.copy(nome)
+        pyautogui.hotkey('ctrl', 'v')
 
         # 2- Clicar e selecionar o lado (pé direito ou esquerdo)
         if lado == 'right':
