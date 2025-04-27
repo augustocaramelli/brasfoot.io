@@ -5,7 +5,7 @@ import random
 from paises import paises_en_pt
 import pyperclip
 
-club_id = 31  # Example club ID, replace with actual ID
+club_id = 10741  # Example club ID, replace with actual ID
 url = f"https://transfermarkt-api.fly.dev/clubs/{club_id}/players"
 response = requests.get(url)
 if response.status_code == 200:
@@ -539,9 +539,13 @@ if response.status_code == 200:
         # 4- Clicar e selecionar a nacionalidade
         nacionalidade_en = player.get('nationality')[0]
         nacionalidade_pt = paises_en_pt.get(nacionalidade_en, nacionalidade_en)
-        pyautogui.click(878,486, duration=0)
-        pyautogui.write(nacionalidade_pt)
-        pyautogui.click(813,636, duration=0)
+
+        if nacionalidade_en == 'N/A':
+            print('Sem nacionalidade, etapa pulada')
+        else:
+            pyautogui.click(878,486, duration=0)
+            pyautogui.write(nacionalidade_pt)
+            pyautogui.click(813,636, duration=0)
 
         # 5- Clicar o mouse de acordo com a idade
         if idade is None:
