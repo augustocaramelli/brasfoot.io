@@ -112,7 +112,7 @@ paises_en_pt = {
     "Malta": "Malta",
     "Mauritania": "Mauritânia",
     "Mauritius": "Maurícia",
-    "Mexico": "México",
+    "Mexico": "M M M M M M M M M M M M M",
     "Moldova": "Moldávia",
     "Monaco": "Mónaco",
     "Mongolia": "Mongólia",
