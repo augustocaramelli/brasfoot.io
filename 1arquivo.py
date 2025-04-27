@@ -29,13 +29,13 @@ if response.status_code == 200:
         elif lado == False:
             print('Padronizado como destro, etapa pulada')
 
-        # 3- Clicar e selecionar a posição
+        # 3- Clicar e selecionar a posição e as características
         if posicao == 'Goalkeeper':
             print('Goleiro, etapa pulada') # Se for goleiro, essa etapa pode ser pulada
 
             lista = ['Col', 'DPe', 'Ref', 'SGo']
             caracteristicas = random.sample(lista, 2)
-            print(caracteristicas)
+            print(nome, caracteristicas)
             if caracteristicas[0] == 'Col':
                 pyautogui.click(880,525, duration=0)
                 pyautogui.click(880,545, duration=0)
@@ -69,6 +69,43 @@ if response.status_code == 200:
             # Para colocar do lado esquerdo:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,485, duration=0)
+
+            lista = ['Cru', 'Des', 'Mar', 'Pas', 'Vel']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Cru':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,590, duration=0)
+            elif caracteristicas[0] == 'Des':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,605, duration=0)
+            elif caracteristicas[0] == 'Mar':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,660, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Vel':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,715, duration=0)
+
+            if caracteristicas[1] == 'Cru':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,590, duration=0)
+            elif caracteristicas[1] == 'Des':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,605, duration=0)
+            elif caracteristicas[1] == 'Mar':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,660, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+            
+
         elif posicao == 'Right-Back':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,484, duration=0)
@@ -76,19 +113,249 @@ if response.status_code == 200:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,465, duration=0)
 
+            lista = ['Cru', 'Des', 'Mar', 'Pas', 'Vel']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Cru':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,590, duration=0)
+            elif caracteristicas[0] == 'Des':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,605, duration=0)
+            elif caracteristicas[0] == 'Mar':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,660, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Vel':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,715, duration=0)
+
+            if caracteristicas[1] == 'Cru':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,590, duration=0)
+            elif caracteristicas[1] == 'Des':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,605, duration=0)
+            elif caracteristicas[1] == 'Mar':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,660, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+
+
         elif posicao == 'Centre-Back' or posicao == 'Sweeper' or posicao == 'Defender':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,500, duration=0)
 
-        elif posicao == 'Central Midfield' or posicao == 'Defensive Midfield' or posicao == 'Attacking Midfield' or posicao == 'Midfielder':
+            lista = ['Cab', 'Des', 'Mar', 'Res']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Cab':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,570, duration=0)
+            elif caracteristicas[0] == 'Des':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,605, duration=0)
+            elif caracteristicas[0] == 'Mar':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,660, duration=0)
+            elif caracteristicas[0] == 'Res':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,695, duration=0)
+
+            if caracteristicas[1] == 'Cab':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,570, duration=0)
+            elif caracteristicas[0] == 'Des':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,605, duration=0)
+            elif caracteristicas[0] == 'Mar':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,660, duration=0)
+            elif caracteristicas[0] == 'Res':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,695, duration=0)
+
+
+        elif posicao == 'Defenvise Midfield':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,520, duration=0)
+
+            lista1 = ['Cab', 'Des', 'Mar', 'Res']
+            caracteristica1 = random.choice(lista1)
+            lista2 = ['Cab', 'Des', 'Fin', 'Mar', 'Pas', 'Res', 'Vel']
+            caracteristica2 = random.choice(lista2)
+            if caracteristica1 == caracteristica2:
+                while caracteristica1 == caracteristica2:
+                    caracteristica2 = random.choice(lista2)
+            print(nome, caracteristica1, caracteristica2)
+
+            if caracteristica1 == 'Cab':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,570, duration=0)
+            elif caracteristica1 == 'Des':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,605, duration=0)
+            elif caracteristica1 == 'Mar':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,660, duration=0)
+            elif caracteristica1 == 'Res':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,695, duration=0)
+
+            if caracteristica2 == 'Cab':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,570, duration=0)
+            elif caracteristica2 == 'Des':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,605, duration=0)
+            elif caracteristica2 == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristica2 == 'Mar':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,660, duration=0)
+            elif caracteristica2 == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristica2 == 'Res':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,695, duration=0)
+            elif caracteristica2 == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+
+
+        elif posicao == 'Attacking Midfield':
+            pyautogui.click(862,443, duration=0)
+            pyautogui.click(862,520, duration=0)
+
+            lista = ['Arm', 'Dri', 'Fin', 'Pas']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Arm':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,555, duration=0)
+            elif caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+
+            if caracteristicas[1] == 'Arm':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,555, duration=0)
+            elif caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+
+
+        elif posicao == 'Central Midfield' or posicao == 'Midfielder':
+            pyautogui.click(862,443, duration=0)
+            pyautogui.click(862,520, duration=0)
+
+            lista = ['Arm', 'Des', 'Dri', 'Fin', 'Mar', 'Pas', 'Vel']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+
+            if caracteristicas[0] == 'Arm':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,555, duration=0)
+            elif caracteristicas[0] == 'Des':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,605, duration=0)
+            elif caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Mar':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,660, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Vel':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,715, duration=0)
+
+            if caracteristicas[1] == 'Arm':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,555, duration=0)
+            elif caracteristicas[1] == 'Des':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,605, duration=0)
+            elif caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Mar':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,660, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+
+
         elif posicao == 'Left Midfield':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,520, duration=0)
             # Para colocar do lado esquerdo:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,485, duration=0)
+
+            lista = ['Dri', 'Fin', 'Pas', 'Vel']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Vel':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,715, duration=0)
+
+            if caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+
+
         elif posicao == 'Right Midfield':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,520, duration=0)
@@ -96,21 +363,177 @@ if response.status_code == 200:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,465, duration=0)
 
+            lista = ['Dri', 'Fin', 'Pas', 'Vel']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Vel':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,715, duration=0)
+
+            if caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+
+
         elif posicao == 'Left Winger':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,540, duration=0)
             # Para colocar do lado esquerdo:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,485, duration=0)
+
+            lista = ['Dri', 'Fin', 'Pas', 'Vel']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Vel':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,715, duration=0)
+
+            if caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+
+
         elif posicao == 'Right Winger':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,540, duration=0)
             # Para colocar do lado direito:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,465, duration=0)
-        elif posicao == 'Centre-Forward' or posicao == 'Striker' or posicao == 'Second Striker':
+
+            lista = ['Dri', 'Fin', 'Pas', 'Vel']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Vel':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,715, duration=0)
+
+            if caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Vel':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,715, duration=0)
+
+
+        elif posicao == 'Centre-Forward' or posicao == 'Striker':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,540, duration=0)
+
+            lista = ['Cab', 'Dri', 'Fin', 'Res']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Cab':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,570, duration=0)
+            elif caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Res':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,695, duration=0)
+
+            if caracteristicas[1] == 'Cab':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,570, duration=0)
+            elif caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Res':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,695, duration=0)
+
+
+        elif posicao == 'Second Striker':
+            pyautogui.click(862,443, duration=0)
+            pyautogui.click(862,540, duration=0)
+
+            lista = ['Dri', 'Fin', 'Pas', 'Res']
+            caracteristicas = random.sample(lista, 2)
+            print(nome, caracteristicas)
+            if caracteristicas[0] == 'Dri':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,625, duration=0)
+            elif caracteristicas[0] == 'Fin':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,645, duration=0)
+            elif caracteristicas[0] == 'Pas':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,680, duration=0)
+            elif caracteristicas[0] == 'Res':
+                pyautogui.click(880,525, duration=0)
+                pyautogui.click(880,695, duration=0)
+
+            if caracteristicas[1] == 'Dri':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,625, duration=0)
+            elif caracteristicas[1] == 'Fin':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,645, duration=0)
+            elif caracteristicas[1] == 'Pas':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,680, duration=0)
+            elif caracteristicas[1] == 'Res':
+                pyautogui.click(1100,525, duration=0)
+                pyautogui.click(1100,695, duration=0)
+
 
         # 4- Clicar e selecionar a nacionalidade
         nacionalidade_en = player.get('nationality')[0]
@@ -119,15 +542,7 @@ if response.status_code == 200:
         pyautogui.write(nacionalidade_pt)
         pyautogui.click(813,636, duration=0)
 
-        # 5- Clicar e selecionar a característica 1
-        # necessário pensar um método para selecionar a característica por meio de estatísticas mais avançadas disponíveis no TM
-        # pyautogui.click(885,529, duration=1)
-
-        # 6- Clicar e selecionar a característica 2
-        # necessário pensar um método para selecionar a característica por meio de estatísticas mais avançadas disponíveis no TM
-        # pyautogui.click(1109,529, duration=1)
-
-        # 7- Clicar o mouse de acordo com a idade
+        # 5- Clicar o mouse de acordo com a idade
         if idade is None:
             print('Sem idade, etapa pulada')
         else:
