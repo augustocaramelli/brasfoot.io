@@ -129,6 +129,7 @@ paises_en_pt = {
     "Nigeria": "Nigéria",
     "North Korea": "Coreia",
     "North Macedonia": "Macedónia",
+    "Northern Ireland": "Irlanda I",
     "Norway": "Noruega",
     "Oman": "Omã",
     "Pakistan": "Paquistão",

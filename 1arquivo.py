@@ -172,18 +172,18 @@ if response.status_code == 200:
             if caracteristicas[1] == 'Cab':
                 pyautogui.click(1100,525, duration=0)
                 pyautogui.click(1100,570, duration=0)
-            elif caracteristicas[0] == 'Des':
+            elif caracteristicas[1] == 'Des':
                 pyautogui.click(1100,525, duration=0)
                 pyautogui.click(1100,605, duration=0)
-            elif caracteristicas[0] == 'Mar':
+            elif caracteristicas[1] == 'Mar':
                 pyautogui.click(1100,525, duration=0)
                 pyautogui.click(1100,660, duration=0)
-            elif caracteristicas[0] == 'Res':
+            elif caracteristicas[1] == 'Res':
                 pyautogui.click(1100,525, duration=0)
                 pyautogui.click(1100,695, duration=0)
 
 
-        elif posicao == 'Defenvise Midfield':
+        elif posicao == 'Defensive Midfield':
             pyautogui.click(862,443, duration=0)
             pyautogui.click(862,520, duration=0)
 
@@ -562,4 +562,4 @@ if response.status_code == 200:
 
         # 8- Clicar no botão OK
         pyautogui.click(896,641, duration=0)
-        sleep(1)
+        sleep(0)
