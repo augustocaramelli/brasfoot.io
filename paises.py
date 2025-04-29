@@ -144,7 +144,7 @@ paises_en_pt = {
     "Puerto Rico": "Porto",
     "Qatar": "Catar",
     "Romania": "Roménia",
-    "Russia": "Rússia",
+    "Russia": "Ru R",
     "Rwanda": "Ruanda",
     "San Marino": "San",
     "Saudi Arabia": "Arábia",

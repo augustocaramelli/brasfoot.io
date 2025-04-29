@@ -28,7 +28,7 @@ if response.status_code == 200:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,485, duration=0)
         elif lado == False:
-
+            
             lista = ['right', 'left']
             lado = random.choice(lista)
             if lado == 'right':
