@@ -5,7 +5,7 @@ import random
 from paises import paises_en_pt
 import pyperclip
 
-club_id = 10741  # Example club ID, replace with actual ID
+club_id = 64779  # Example club ID, replace with actual ID
 url = f"https://transfermarkt-api.fly.dev/clubs/{club_id}/players"
 response = requests.get(url)
 if response.status_code == 200:
@@ -28,7 +28,15 @@ if response.status_code == 200:
             pyautogui.click(1073,446, duration=0)
             pyautogui.click(1073,485, duration=0)
         elif lado == False:
-            print('Padronizado como destro, etapa pulada')
+
+            lista = ['right', 'left']
+            lado = random.choice(lista)
+            if lado == 'right':
+                print('Destro randomizado')
+            elif lado == 'left':
+                pyautogui.click(1073,446, duration=0)
+                pyautogui.click(1073,485, duration=0)
+                print('Canhoto randomizado')
 
         # 3- Clicar e selecionar a posição e as características
         if posicao == 'Goalkeeper':
